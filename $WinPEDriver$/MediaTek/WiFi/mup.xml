@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MUPDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.dell.com/openmanage/cm/2/0/mupdefinition.xsd">
+  <packageinformation>
+    <installertype>vendorinstaller</installertype>
+    <mupspecificationversion>3.0.0</mupspecificationversion>
+    <name>MTK MT7921 WLAN driver</name>
+    <packagegrouping>dch_package</packagegrouping>
+    <packagingtype>dch_inf_package</packagingtype>
+    <releasetype>DRVR</releasetype>
+    <subsystem>Network</subsystem>
+    <version>3.03.03.0760</version>
+    <AppliesTo>
+      <DeviceInformation>MTK MT7921 WLAN driver</DeviceInformation>
+    </AppliesTo>
+    <supportedoperatingsystems>
+      <osidentifier name="Windows10" architecture="x64" />
+    </supportedoperatingsystems>
+    <content dchSupport="true" baseOSBuildNumber="0">
+      <DeviceGroup supportedOSBuildNumber="0">
+        <Device componentID="111036">
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="7961" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="4680" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="4683" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="3802" subVendorID="11AD" />
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="4681" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="4684" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="0608" subDeviceID="0608" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="0608" subDeviceID="C608" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="0608" subDeviceID="E0D0" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="0608" subDeviceID="E0C5" subVendorID="17AA" />
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="E0B7" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="E0BC" subVendorID="17AA" />
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="3812" subVendorID="17AA" />
+          <PCIInfo vendorID="14C3" deviceID="7961" subDeviceID="4682" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7922" subDeviceID="7922" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="7922" subDeviceID="5300" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7922" subDeviceID="5910" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7922" subDeviceID="5911" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7922" subDeviceID="5140" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7922" subDeviceID="5301" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7922" subDeviceID="3804" subVendorID="11AD" />
+          <PCIInfo vendorID="14C3" deviceID="7922" subDeviceID="38E4" subVendorID="11AD" />
+          <PCIInfo vendorID="14C3" deviceID="7922" subDeviceID="E0DA" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="0616" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="C616" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="D616" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E616" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0C6" subVendorID="17AA" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0C7" subVendorID="17AA" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0CB" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0DB" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0CD" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0DE" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0DF" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0CF" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0D1" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="0616" subDeviceID="E0EC" subVendorID="105B" />
+          <PCIInfo vendorID="14C3" deviceID="7920" subDeviceID="7920" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="7902" subDeviceID="7902" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="7902" subDeviceID="0902" subVendorID="185F" />
+          <PCIInfo vendorID="14C3" deviceID="7902" subDeviceID="5520" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7902" subDeviceID="5521" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7902" subDeviceID="5524" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7902" subDeviceID="1EDE" subVendorID="14C3" />
+          <PCIInfo vendorID="14C3" deviceID="7902" subDeviceID="3806" subVendorID="11AD" />
+          <PCIInfo vendorID="14C3" deviceID="7902" subDeviceID="6040" subVendorID="1A3B" />
+          <PCIInfo vendorID="14C3" deviceID="7902" subDeviceID="6041" subVendorID="1A3B" />
+          <Image type="DRVR" inftype="base" version="3.03.03.0760">
+            <file>production\Windows10-x64\0\Drivers\Drivers\mtkwl6ex.inf</file>
+            <supportedoperatingsystems>
+              <osidentifier name="Windows10.0" architecture="x64" buildNumber="0" />
+            </supportedoperatingsystems>
+          </Image>
+        </Device>
+      </DeviceGroup>
+    </content>
+  </packageinformation>
+  <executable architecture="x86" timeout="900">
+    <executablename>setup.exe</executablename>
+    <requiredparameters>
+      <commandlineparameter />
+    </requiredparameters>
+  </executable>
+  <behaviors>
+    <behavior name="freshinstall">
+      <vendoroption>
+        <optionvalue switch="" requiresvalue="false" valuedelimiter="" enclose="" />
+      </vendoroption>
+    </behavior>
+    <behavior name="attended">
+      <vendoroption>
+        <optionvalue switch="" requiresvalue="false" valuedelimiter="" enclose="" />
+      </vendoroption>
+    </behavior>
+    <behavior name="unattended">
+      <vendoroption>
+        <optionvalue switch="/" requiresvalue="false" valuedelimiter="" enclose="">s /v" /qn"</optionvalue>
+      </vendoroption>
+    </behavior>
+  </behaviors>
+  <parameters>
+    <parametermapping name="logfile">
+      <vendoroption>
+        <optionvalue switch="" requiresvalue="false" valuedelimiter="" enclose="" />
+      </vendoroption>
+    </parametermapping>
+  </parameters>
+  <returncodes>
+    <returncodemapping name="SUCCESS">
+      <vendorreturncode>0</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="ERROR">
+      <vendorreturncode>1602</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOT_REQUIRED">
+      <vendorreturncode>3010</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="REBOOTING_SYSTEM">
+      <vendorreturncode>1641</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="PASSWORD_REQUIRED">
+      <vendorreturncode>2</vendorreturncode>
+    </returncodemapping>
+    <returncodemapping name="UNKNOWN_OPTION">
+      <vendorreturncode>1203</vendorreturncode>
+    </returncodemapping>
+  </returncodes>
+  <driverarchive>
+    <alldriversroot>.</alldriversroot>
+  </driverarchive>
+</MUPDefinition>
