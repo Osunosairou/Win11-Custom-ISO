@@ -47,6 +47,12 @@
             "*": {
                 "installation_mode": "allowed"
             },
+            "{4853d046-c5a3-436b-bc36-220fd935ee1d}": {
+                "installation_mode": "normal_installed",
+                "install_url": "https://addons.mozilla.org/firefox/downloads/latest/undoclosetabbutton/latest.xpi",
+                "default_area": "navbar",
+                "private_browsing": "true"
+            },
             "uBlock0@raymondhill.net": {
                 "installation_mode": "normal_installed",
                 "install_url": "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi",
@@ -60,14 +66,14 @@
                 "Amazon.com",
                 "eBay",
                 "Bing",
-                "Wikipedia",
+                "Wikipedia (en)",
+                "Wikipédia (pt)",
                 "Perplexity",
-                "Google",
                 "MercadoLivre"
             ],
             "Add": [
                 {
-                    "Name": "google",
+                    "Name": "Google Web",
                     "Description": "Google's 'web' search section. Hides AI and clutter",
                     "Alias": "",
                     "Method": "GET",
@@ -75,7 +81,7 @@
                     "IconURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAApVBMVEVHcEz////////////////+/v/////////////////////////609Hwh4DrRDfpKxTpMB3uamH1r6v89+/96+rqOivrPy/nDwDykoz4xMH/////4qL1lAD8wy78vAT7tgOqxPmowvmjv/n80GhBhfU3gPUtfPTc5/1WkfVYs2Xl8uvWvDEzqVMqpksSokG80Pu+4MUgpEaKyZnM59I7kr00nI2s17YDdSIbAAAAG3RSTlMAMobC6v5g7P8U3jv//////////////////4VXmVN/AAABJ0lEQVR4AXySAxbEQAxA66Zr26it+x9tJ8lav+5/g0C6IyuqpuuaqsjSO4YJd0zjRVkNeKFhPVwTPmh+cfq7tYBptTvdbq8/GALBM/N6o353POl0OpNxb8Dr0j55WHeCgvy0BQju2aRx6Hqd9qzfG3fnQJgidkA6EzGMfg777ASytMDHcjWejEfwxkJS8bHebCdiwBuqpOFju9lsANntmQMGrEl4Hwp5JHk6M7aDGXmT7olheZ92Tdk72YKb1G4bWns+EDzc1mlDHEoQRh4wuiOGuhyKTD/iUFidpHMWAxNOAqcvRZvlRZHmcXk600DznvhcWKGzLAqjyvY58feS1XEUMllIrvFc7GGexWJkHNZAWG9t4qdp4f9pInh3l2FLmoQTNd7sAAAlrSjdz36eyAAAAABJRU5ErkJggg=="
                 }
             ],
-            "Default": "google"
+            "Default": "Google Web"
         }
     }
 }
