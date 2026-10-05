@@ -718,25 +718,41 @@ Windows Registry Editor Version 5.00
 "OverlayTestMode"=dword:00000005
 		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-06.ps1">
-if( [System.Environment]::OSVersion.Version.Build -lt 26100 ) {
-    'This script requires Windows 11 24H2 or later.' | Write-Warning;
-    return;
-}
-$timeout = [datetime]::Now.AddMinutes( 5 );
-$exe = "$env:LOCALAPPDATA\Microsoft\WindowsApps\winget.exe";
+#Installs Winget and Firefox
+#----------------------------------------------------------------------------
+&amp;{
+    if( [System.Environment]::OSVersion.Version.Build -lt 26100 ) {
+        'This script requires Windows 11 24H2 or later.' | Write-Warning;
+        return;
+    }
+    $timeout = [datetime]::Now.AddMinutes( 5 );
+    $exe = "$env:LOCALAPPDATA\Microsoft\WindowsApps\winget.exe";
 
-while( $true ) {
-    if( $exe | Test-Path ) {
-        &amp; $exe install --exact --id Mozilla.Firefox --silent --accept-package-agreements --accept-source-agreements --source winget --scope machine;
-        return;
+    while( $true ) {
+        if( $exe | Test-Path ) {
+            &amp; $exe install --exact --id Mozilla.Firefox --silent --accept-package-agreements --accept-source-agreements --source winget --scope machine;
+            return;
+        }
+        if( [datetime]::Now -gt $timeout ) {
+            "File '${exe}' does not exist." | Write-Warning;
+            return;
+        }
+        "Waiting for '${exe}' to become available..." | Write-Host;
+        Start-Sleep -Seconds 1;
     }
-    if( [datetime]::Now -gt $timeout ) {
-        "File '${exe}' does not exist." | Write-Warning;
-        return;
-    }
-    "Waiting for '${exe}' to become available..." | Write-Host;
-    Start-Sleep -Seconds 1;
 }
+
+#Copies preferences and policies files from USB to the Firefox installation
+#----------------------------------------------------------------------------
+foreach( $drive in [System.IO.DriveInfo]::GetDrives() ) {
+    if( $found = Join-Path -Path $drive.RootDirectory -ChildPath 'Windows*installation*extras\Mozilla*Firefox' -Resolve -ErrorAction 'SilentlyContinue' ) {
+        $firefoxPath = (Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\firefox.exe").'(Default)';
+        $firefoxDir = Split-Path -Path $firefoxPath;
+        Copy-Item -Path "$found\*" -Destination $firefoxDir -Recurse -Force;
+        return;
+    }
+}
+'Cannot find any files that match pattern.' | Write-Warning;
 		</File>
 		<File path="C:\Windows\Setup\Scripts\unattend-07.ps1">
 $user = 'microsoft';
